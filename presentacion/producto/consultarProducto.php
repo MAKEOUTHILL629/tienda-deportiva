@@ -57,6 +57,7 @@ $totalFilas = $producto->consultarTotalFilas();
                                 echo ($atributo != "precio" || $direccion != "desc") ? "<a href='index.php?pid=" . base64_encode("presentacion/producto/consultarProducto.php") . "&atributo=precio&direccion=desc&filas=" . $filas . "'><i class='fas fa-sort-amount-down-alt'></i></a> " : "<i class='fas fa-sort-down'></i> ";
                                 ?>
                             </th>
+                            <th>Talla</th>
                             <th>Cantidad</th>
                             <th>Categoria</th>
                         </tr>

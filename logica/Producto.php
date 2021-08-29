@@ -95,7 +95,7 @@ class Producto
     public function consultarTodos($atributo, $direccion, $filas, $pag)
     {
         $this->conexion->abrir();
-        echo $this->productoDAO->consultarTodos($atributo, $direccion, $filas, $pag);
+
         $this->conexion->ejecutar($this->productoDAO->consultarTodos($atributo, $direccion, $filas, $pag));
         $productos = array();
         while (($resultado = $this->conexion->extraer()) != null) {
